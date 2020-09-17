@@ -12,3 +12,9 @@ module "consul_aws" {
   name       = "mesh"
   datacenter = "aws"
 }
+
+module "vault_aws" {
+  source     = "./modules/vault"
+  name       = "vault"
+  datacenter = "aws"
+}

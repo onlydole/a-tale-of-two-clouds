@@ -19,3 +19,12 @@ module "consul_az" {
     helm = helm.az
   }
 }
+
+module "vault_az" {
+  source     = "./modules/vault"
+  name       = "vault"
+  datacenter = "azure"
+  providers = {
+    helm = helm.az
+  }
+}

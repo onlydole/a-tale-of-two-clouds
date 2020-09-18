@@ -1,8 +1,3 @@
-provider "azurerm" {
-  version = "~> 2.26"
-  features {}
-}
-
 resource "azurerm_resource_group" "project" {
   name     = var.project_name
   location = "West US"

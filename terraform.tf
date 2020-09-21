@@ -20,7 +20,10 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "~> 2.28"
     }
-    aws = "~> 3.7"
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 3.7"
+    }
     random = {
       source  = "hashicorp/random"
       version = "~> 2.3"
